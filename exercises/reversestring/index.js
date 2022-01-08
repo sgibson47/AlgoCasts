@@ -7,8 +7,28 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 function reverse(str) {
-    return str.split('').reduce((rev, char)=> char + rev, '')
+    let reversed = ''
+    for (let character of str){
+        debugger
+        reversed = character + reversed
+    }
+    return reversed
 }
+
+// to use debugger, need to manually call function
+// not just export as we do here 
+reverse('abc')
+// now if we run this file we'll pause on the debugger
+// navigate to reversestring dir
+// node inspect index.js
+
+// then c | cont | continue to play 
+
+// to inspect a variables
+// repl
+// variables or code snippets at that point in the process
+
+// Debugger
 
 module.exports = reverse;
 
