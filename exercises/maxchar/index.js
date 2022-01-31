@@ -1,10 +1,17 @@
 // --- Directions
-// Given a string, return the character that is most
-// commonly used in the string.
-// --- Examples
-// maxChar("abcccccccd") === "c"
-// maxChar("apple 1231111") === "1"
+// Write a program that console logs the numbers
+// from 1 to n. But for multiples of three print
+// “fizz” instead of the number and for the multiples
+// of five print “buzz”. For numbers which are multiples
+// of both three and five print “fizzbuzz”.
+// --- Example
+//   fizzBuzz(5);
+//   1
+//   2
+//   fizz
+//   4
+//   buzz
 
-function maxChar(str) {}
+function fizzBuzz(n) {}
 
-module.exports = maxChar;
+module.exports = fizzBuzz;

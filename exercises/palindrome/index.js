@@ -7,6 +7,44 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+    // arr.every()
+    // does a boolean assessment on every value in an array
+    // arr.every((item, index) => experession )
+    // if any expression retunrs false, every returns false
+    // if all expression return trure , every returns true
+
+    return str.split('').every((char, index)=> char === str[str.length - index - 1])
+    // but this causes extra work
+    // we'll compare the first to the last, but then also last to first
+    // we're doing double the work 
+}
 
 module.exports = palindrome;
+
+
+// Gibson - Solution 1
+// function palindrome(str) {
+//     const reversed = str.split('').reduce((rev, char)=>char+rev, '')
+//     return str === reversed
+// }
+
+// Grider - Solution 1
+// function palindrome(str) {
+//     const reversed = str.split('').reverse().join('')
+//     return str === reversed
+// }
+
+// Grider - Solution 2
+// function palindrome(str) {
+//     // arr.every()
+//     // does a boolean assessment on every value in an array
+//     // arr.every((item, index) => experession )
+//     // if any expression retunrs false, every returns false
+//     // if all expression return trure , every returns true
+
+//     return str.split('').every((char, index)=> char === str[str.length - index - 1])
+//     // but this causes extra work
+//     // we'll compare the first to the last, but then also last to first
+//     // we're doing double the work 
+// }
